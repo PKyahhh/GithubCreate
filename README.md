@@ -1,5 +1,4 @@
 ProjectINIT
-----------------------------------------------------
 To begin using this code, you have to do a little bit of setup beforehand --->
 ----------------------------------------------------
 INSTALASTION STEPS:
