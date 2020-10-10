@@ -16,7 +16,7 @@ INSTALATION STEPS:
 
 ![Image of download](https://lh3.googleusercontent.com/-ENXsWaOFC28/X4HMOWONF9I/AAAAAAAAQ2M/l7EUAAgcBygUB2DAjn-2C_e9xR57h1UBACK8BGAsYHg/s0/Capture3.PNG)
 ***
-  -First begin by copying the COMPLPETE path to the batch file
+  -First begin by copying the COMPLETE path to the batch file
 
   -Next go to your search bar in the computer and search ENV
 
