@@ -3,14 +3,14 @@ import sys
 from github import Github
 
 name = str(sys.argv[1])
-username = "PKyahhh"
-password = "Flare123&"
-path = "C:\\Users\\Pradham\\Desktop"
-os.chdir("C:\\Users\\Pradham\\Desktop")
+username = "USERNAME"
+password = "PASSWORD"
+path = "PATH"
+os.chdir("PATH")
 
 def create():
     os.mkdir(name)
-    os.chdir("C:\\Users\\Pradham\\Desktop\\"+name)
+    os.chdir("PATH"+name)
     user = Github(username, password).get_user()
     user.create_repo(name)
     os.system("git init")
