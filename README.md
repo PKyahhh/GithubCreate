@@ -15,10 +15,16 @@ INSTALATION STEPS:
 3. The final step is to add the batch file to your PATH variable in order to use it from anywhere in the command line (The circled area)
 
 -First begin by copying the COMPLPETE path to the batch file
+
 -Next go to your search bar in the computer and search ENV
+
 -Click on the sugestion and then click on environment variables, located in the bottom right
+
 -Click on the PATH variable in the top box and click edit
+
 -Click new and paste your COMPLETE path into the new box
+
 -Click ok on all of the tabs and you are ready!!!
+
 
 
