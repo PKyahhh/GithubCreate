@@ -10,7 +10,7 @@ os.chdir("PATH")
 
 def create():
     os.mkdir(name)
-    os.chdir("PATH"+name)
+    os.chdir(path+name)
     user = Github(username, password).get_user()
     user.create_repo(name)
     os.system("git init")
