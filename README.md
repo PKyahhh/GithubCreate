@@ -1,8 +1,9 @@
 ProjectINIT
 ----------------------------------------------------
 This was a small project that allows the user to create a new github repository from their command line/terminal
+watch the video for a demonstration
 
-
+https://youtu.be/0Ojy0Nj9osI
 
 ----------------------------------------------------
 INSTALATION STEPS:
