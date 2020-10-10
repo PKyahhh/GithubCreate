@@ -12,7 +12,9 @@ INSTALATION STEPS:
 
 2. Edit both files in the folder and add your paths/username/password and save them
 
-3. The final step is to add the batch file to your PATH variable in order to use it from anywhere in the command line (The circled area)
+3. The final step is to add the batch file to your PATH variable in order to use it from anywhere in the command line 
+
+![Image of download](https://lh3.googleusercontent.com/-ENXsWaOFC28/X4HMOWONF9I/AAAAAAAAQ2M/l7EUAAgcBygUB2DAjn-2C_e9xR57h1UBACK8BGAsYHg/s0/Capture3.PNG)
 ***
   -First begin by copying the COMPLPETE path to the batch file
 
