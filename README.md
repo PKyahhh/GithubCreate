@@ -4,8 +4,6 @@ This was a small project that allows the user to create a new github repository 
 
 Watch the video for a demonstration
 
-https://youtu.be/0Ojy0Nj9osI
-
 ----------------------------------------------------
 INSTALATION STEPS:
 1. If you are Linux based (wget https://github.com/PKyahhh/ProjectInit.git) or are Windows based (Download the zip and unzip the file, or clone if you know how)
