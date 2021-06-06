@@ -4,11 +4,14 @@ import sys
 from github import Github
 
 #Defining variables like username and path
-name = str(sys.argv[1]) #reads the value given after the word "create"
+try:
+    name = str(sys.argv[1]) #reads the value given after the word "create"
+except:
+    print("Usage: create [name of repo]")
+    exit()
 username = "USERNAME"
-password = "PASSWORD"
 path = "PATH" #Don't forget to add backslashes to the end for later
-os.chdir("PATH")
+os.chdir(path)
 word = "First commit" 
 
 def create():
@@ -22,14 +25,16 @@ def create():
     f.close()
 
     #Accessing Github with login credentials
-    user = Github(username, password).get_user()
-    user.create_repo(name)
+    user = Github("API Token")
+    n = user.get_user()
+    n.create_repo(name)
 
     #Using basic github steps to creating repo from terminal (Found on github)
     os.system("git init")
+    os.system("git config --global user.email EMAIL")
     os.system("git commit -m " + word)
     os.system("git branch -m master")
-    os.system("git remote add origin https://github.com/USERNAME/"+name+".git") #Don't forget to add username here
+    os.system("git remote add origin https://github.com/"+username+"/"+name+".git") #Don't forget to add username here
     os.system("code .")
     os.system("git add .")
     os.system("git commit -m README.md")
