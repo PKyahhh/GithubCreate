@@ -1,4 +1,4 @@
-ProjectINIT
+Github Create
 ----------------------------------------------------
 This was a small project that allows the user to create a new github repository from their command line/terminal
 
