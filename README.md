@@ -6,7 +6,7 @@ Watch the video for a demonstration
 
 ----------------------------------------------------
 INSTALATION STEPS:
-1. If you are Linux based (wget https://github.com/PKyahhh/ProjectInit.git) or are Windows based (Download the zip and unzip the file, or clone if you know how)
+1. If you are Linux based (wget https://github.com/PKyahhh/GithubCreate.git) or are Windows based (Download the zip and unzip the file, or clone if you know how)
 
   ![Image of download](https://lh3.googleusercontent.com/-sVs5xthbeLY/X4HIZQ6HNfI/AAAAAAAAQ1E/7jrltkbRoYQnSJehsjNcALPjVrUIotApQCK8BGAsYHg/s0/Capture.PNG)
 
