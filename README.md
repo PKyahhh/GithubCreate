@@ -1,7 +1,11 @@
 EasyInit
 ----------------------------------------------------
-An automated way to create a new github repository from the command line/terminal
+A cli-based automation tool for creating github repositories
 ----------------------------------------------------
-Use go to build the file for windows or simply run the file with go after placing it in PATH
-
-Place github auth token in env file
+Installation Steps:
+    - Linux
+        - Place binary in /usr/bin/ directory or any other path that is in $PATH
+    -Windows
+        - Place exe anywhere and add that path to the PATH using env gui
+    * Make sure to change both the Username and Token variable values in .env
+    

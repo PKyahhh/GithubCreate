@@ -7,6 +7,8 @@ import(
 	"golang.org/x/oauth2"
 	"context"
 	"github.com/joho/godotenv"
+	"os/exec"
+	"runtime"
 )
 
 func main(){
@@ -28,8 +30,34 @@ func main(){
 		fmt.Println("Error creating repo")
 		os.Exit(-1)
 	}
-	fmt.Println("Repo created")
-
-
+	//Create README and add to repo
+	file := &github.RepositoryContentFileOptions{
+		Message: github.String("Initial commit"),
+		Content: []byte("# " + os.Args[1]),
+	}
+	_,_,err = client.Repositories.CreateFile(ctx, os.Getenv("USERNAME"), os.Args[1], "README.md", file) //Add README to repo
+	if err != nil{
+		fmt.Println("Error creating README")
+		fmt.Println(err)
+		os.Exit(-1)
+	}
+	//Create .gitignore and add to repo
+	file = &github.RepositoryContentFileOptions{
+		Message: github.String("Initial commit"),
+		Content: []byte(".gitignore"),
+	}
+	_,_,err = client.Repositories.CreateFile(ctx, os.Getenv("USERNAME"), os.Args[1], ".gitignore", file) //Add .gitignore to repo
+	if err != nil{
+		fmt.Println("Error creating .gitignore")
+		fmt.Println(err)
+		os.Exit(-1)
+	}
 	
+	//Run platform specific command to clone repo
+	if runtime.GOOS == "windows"{
+		_, err = exec.Command("cmd.exe","/c","git clone https://github.com/" + os.Getenv("USERNAME") + "/" + os.Args[1]).Output()
+	} else{
+		_, err = exec.Command("bash","-c","git clone https://github.com/" + os.Getenv("USERNAME") + "/" + os.Args[1]).Output()
+	}
+	fmt.Println("Repo created successfully")
 }
